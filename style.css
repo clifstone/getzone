@@ -1,0 +1,106 @@
+:root {
+  --thAs: 56.25%;
+  --asidewidth: 250px;
+  --moblogowidth: 200px;
+  --menbtnstrokewidth: 4px;
+}
+
+:root {
+  --fbblue: #3b5998;
+  --twblue: #1DA1F2;
+  --ytred: #FF0000;
+  --ptred: #c8232c;
+  --primary: #004a10;
+  --secondary: #0c611d;
+  --tertiary: #ff8103;
+  --blacktext: #212121;
+  --whitetext: #FFFFFF;
+  --whitebg: #FFFFFF;
+  --darkbg: #121212;
+  --darkui: #202020;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #ef3e25;
+}
+input.is-invalid:focus-visible,
+textarea.is-invalid:focus-visible {
+  outline: 2px solid #CC0000;
+}
+
+.mob-header {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.menbtn .line {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: #FFFFFF;
+}
+.show-menu .menbtn {
+  background-color: #ef3e25;
+}
+
+.mob-header a {
+  color: #FFFFFF;
+}
+
+.category-nav {
+  background-color: #ef3e25;
+  color: #FFFFFF;
+}
+@media (min-width:1024px) {
+  .category-nav .menu-item-has-children:hover {
+    background-color: #202020;
+    color: #FFFFFF;
+  }
+}
+.category-nav .sub-menu a {
+  background-color: #202020;
+  color: #FFFFFF;
+}
+
+.searchform > form button[type=submit] {
+  background-color: #ef3e25;
+  color: #FFFFFF;
+}
+.searchform input {
+  color: #FFFFFF;
+  background-color: #333333;
+}
+
+.headerlogin > a,
+.headerregister > a {
+  background-color: #656565;
+  color: #FFFFFF;
+}
+
+.headerplaidslot {
+  background-color: #202020;
+}
+
+.sidebarmenu {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.site-footer {
+  background: #090909;
+}
+
+.grid-item .timestamp {
+  color: #FFFFFF;
+  background-color: #ef3e25;
+}
+
+.wp-block-quote,
+.wp-block-pullquote {
+  color: #ef3e25;
+}
+
+/*
+Theme Name: Child of Wires
+Template: wires
+*//*# sourceMappingURL=style.css.map */
