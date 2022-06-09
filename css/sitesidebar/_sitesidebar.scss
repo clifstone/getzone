@@ -1,0 +1,47 @@
+@use '../abstracts/' as *;
+//
+.sidebarmenu {
+    >.wrapper {
+        padding: 2rem 0.5rem;
+    }
+    .navtitle {
+        font-size: $smfontsize;
+        font-weight: $boldfontweight;
+        text-transform: uppercase;
+        margin: 0 0 0.5rem 0;
+    }
+    .menu>.menu-item {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        display: flex;
+        gap: 0.25rem;
+        align-items: baseline;
+        padding: 0 0.75rem;
+        margin: 0;
+        border-bottom: 1px solid $darkgray;
+        >a {
+            font-family: 'Roboto Condensed', sans-serif;
+            width: 100%;
+            display: block;
+            padding: 0.75rem 0;
+        }
+        &:last-child {
+            border-bottom: 0 none;
+        }
+        &:before {
+            font-size: 0.9rem;
+        }
+        @media(hover: hover) {
+            &:hover {
+                background-image: url(images/blackptrn.png);
+                background-color: $accent;
+            }
+        }
+    }
+    .row {
+        margin: 0 0 1.5rem 0;
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@use '../abstracts/' as *;
+//
+.category-nav {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: $blackfontweight;
+    @media #{$des} {
+        .menu .menu-item a {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: $boldfontweight;
+            padding: 1.25rem 0.75rem;
+        }
+        .menu .menu-item-has-children {
+            >a {
+                display: flex;
+                gap: 0.25rem;
+                &:after {
+                    content: '\25BE';
+                }
+            }
+        }
+        .sub-menu .menu-item-has-children {
+            >a {
+                &:after {
+                    content: '\25B8';
+                }
+            }
+        }
+    }
+}

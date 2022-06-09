@@ -1,98 +1,73 @@
 @use '../abstracts/' as *;
 //
-input,
-textarea {
-    &:focus-visible {
-        outline: 2px solid $accent;
+body {
+     ::selection {
+        color: $white;
+        background: $accent;
     }
-    &.is-invalid {
-        &:focus-visible {
-            outline: 2px solid $errorcolor;
+}
+
+.is-front-page {
+    color: $exlightgray;
+    .main-wrap {
+        background-color: $lightblack;
+        background-image: url(images/blackptrn_rev.png);
+    }
+    .lmbtn {
+        background-color: rgba(white, 0.05);
+    }
+    @media #{$tab} {
+        .grid-item {
+            background-color: rgba(white, 0.05);
         }
     }
-}
-
-.mob-header {
-    background-color: $black;
-    color: $white;
-}
-
-.menbtn {
-    .line {
-        fill: none;
-        stroke: $white;
-        stroke-width: $white;
+    @media #{$des} {
+        .grid-item {
+            background-color: rgba(white, 0.05);
+        }
+        .grid-item,
+        .lmbtn {
+            transition: background-color 0.25s ease-out;
+            &:hover {
+                background-color: rgba(white, 0.1);
+            }
+        }
     }
-    .show-menu & {
-        background-color: $accent;
-    }
-}
-
-a {
-    .mob-header & {
-        color: $white;
+    .row-footer .lmbtn>i>svg {
+        fill: $exlightgray;
     }
 }
 
 .category-nav {
-    background-color: $accent;
-    color: $white;
-    @media #{$des} {
-        .menu-item-has-children {
-            &:hover {
-                background-color: $lightblack;
-                color: $white;
-            }
-        }
-    }
-    .sub-menu {
-        a {
-            background-color: $lightblack;
-            color: $white;
-        }
-    }
+    background-image: url(images/blackptrn.png);
 }
 
-.searchform {
-    >form button[type=submit] {
-        background-color: $accent;
-        color: $white;
-    }
-    input {
-        color: $white;
-        background-color: $darkgray;
-    }
-}
-
-.headerlogin,
-.headerregister {
-    >a {
-        background-color: $medgray;
-        color: $white;
+.sidebarmenu {
+    background-image: url(images/blackptrn.png);
+    .show-menu & {
+        background-color: $lightblack;
     }
 }
 
 .headerplaidslot {
-    background-color: $lightblack;
+    background-image: url(images/blackptrn_rev.png);
 }
 
-.sidebarmenu {
-    background-color: $black;
-    color: $white;
-}
-
-.site-footer {
-    background: $medblack;
-}
-
-.grid-item {
-    .timestamp {
-        color: $white;
-        background-color: $accent;
+.lmbtn {
+    background-color: rgba(black, 0.1);
+    @media #{$des} {
+        transition: background-color 0.25s ease-out;
+        &:hover {
+            background-color: rgba(black, 0.15);
+        }
     }
 }
 
-.wp-block-quote,
-.wp-block-pullquote {
-    color: $accent;
+.category-nav .menu-item-has-children:hover,
+.category-nav .sub-menu a {
+    background-color: $darkgray;
+}
+
+.category-nav .sub-menu a:hover {
+    background-color: $medgray;
 }

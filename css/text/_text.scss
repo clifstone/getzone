@@ -1,2 +1,47 @@
 @use '../abstracts/' as *;
 //
+body {
+    font-family: $basefontfam;
+    line-height: $baselineheight;
+    font-size: $basefontsize;
+    color: $medblack;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headingfontfam;
+    line-height: $headinglineheight;
+}
+
+h1,
+h2 {
+    font-weight: $blackfontweight
+}
+
+h1 {
+    font-size: $defh1;
+}
+
+h2 {
+    font-size: $defh2;
+}
+
+h3 {
+    font-size: $defh3;
+}
+
+h4 {
+    font-size: $defh4;
+}
+
+h5 {
+    font-size: $defh5;
+}
+
+h6 {
+    font-size: $defh6;
+}
