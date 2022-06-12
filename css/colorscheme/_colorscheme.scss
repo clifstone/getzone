@@ -7,37 +7,36 @@ body {
     }
 }
 
-.is-front-page {
-    color: $exlightgray;
-    .main-wrap {
-        background-color: $lightblack;
-        background-image: url(images/blackptrn_rev.png);
-    }
-    .lmbtn {
-        background-color: rgba(white, 0.05);
-    }
-    @media #{$tab} {
-        .grid-item {
-            background-color: rgba(white, 0.05);
-        }
-    }
-    @media #{$des} {
-        .grid-item {
-            background-color: rgba(white, 0.05);
-        }
-        .grid-item,
-        .lmbtn {
-            transition: background-color 0.25s ease-out;
-            &:hover {
-                background-color: rgba(white, 0.1);
-            }
-        }
-    }
-    .row-footer .lmbtn>i>svg {
-        fill: $exlightgray;
-    }
-}
-
+// .is-front-page {
+//     color: $exlightgray;
+//     .main-wrap {
+//         background-color: $lightblack;
+//         background-image: url(images/blackptrn_rev.png);
+//     }
+//     .lmbtn {
+//         background-color: rgba(white, 0.05);
+//     }
+//     @media #{$tab} {
+//         .grid-item {
+//             background-color: rgba(white, 0.05);
+//         }
+//     }
+//     @media #{$des} {
+//         .grid-item {
+//             background-color: rgba(white, 0.05);
+//         }
+//         .grid-item,
+//         .lmbtn {
+//             transition: background-color 0.25s ease-out;
+//             &:hover {
+//                 background-color: rgba(white, 0.1);
+//             }
+//         }
+//     }
+//     .row-footer .lmbtn>i>svg {
+//         fill: $exlightgray;
+//     }
+// }
 .category-nav {
     background-image: url(images/blackptrn.png);
 }
