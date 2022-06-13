@@ -10,6 +10,8 @@
             font-weight: $boldfontweight;
             padding: 1.25rem 0.75rem;
         }
+    }
+    @media #{$des2} {
         .menu .menu-item-has-children {
             >a {
                 display: flex;
