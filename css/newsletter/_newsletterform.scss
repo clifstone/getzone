@@ -22,13 +22,14 @@
             }
         }
         .headline {
-            font-size: clamp(1rem, 1.2473rem + 4.3011vw, 1.75rem);
+            font-size: clamp(1rem, 1.2473rem + 4.3011vw, 1.5rem);
             font-weight: bold;
             line-height: 1.1;
             text-transform: uppercase;
+            margin: 0 0 0.5rem;
         }
         .subheadline {
-            font-size: clamp(0.6rem, 1.2473rem + 4.3011vw, 1rem);
+            font-size: clamp(0.6rem, 1.2473rem + 4.3011vw, 0.9rem);
         }
     }
     .newsletterform {
@@ -160,6 +161,7 @@
     align-items: center;
     justify-content: center;
     background: white;
+    margin: -0.25rem;
     .headline {
         font-size: 2rem;
         font-weight: 700

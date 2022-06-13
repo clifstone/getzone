@@ -1,0 +1,86 @@
+@use '../abstracts/' as *;
+//
+.page-template-contributors {
+    .site-main {
+        padding: 0;
+    }
+    h1 {
+        font-size: 1.4rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1;
+        margin: 0 0 1rem;
+    }
+    h3 {
+        text-transform: uppercase;
+        color: $accent;
+        margin: 0 0 0.75rem;
+    }
+    .page-header {
+        background: url(https://www.getzone.com/gzstaging/wp-content/uploads/2022/01/contributors.jpg) no-repeat 50% 50% / cover;
+        margin: 0 0 1rem;
+        p {
+            font-size: 0.8rem;
+            line-height: 1.4;
+            strong {
+                color: $accent;
+            }
+        }
+        >div {
+            padding: 2rem 1rem;
+            max-width: 1366px;
+            margin: auto;
+        }
+        @media #{$tab} {
+            margin: -1rem -1rem 2rem;
+            >div {
+                padding: 2rem;
+            }
+        }
+    }
+    .wp-block-columns {
+        display: grid;
+        grid-gap: 1rem;
+        max-width: 1366px;
+        padding: 0 1rem 2rem;
+        margin: 0 auto 2rem;
+        border-bottom: 4px solid rgba(0, 0, 0, 0.25);
+        &:last-child {
+            border-bottom: none;
+        }
+        .wp-block-column {
+            @media #{$tab} {
+                &:first-child {
+                    position: sticky;
+                    top: $siteheaderheight;
+                }
+            }
+            &:nth-child(2) {
+                padding: 1rem;
+            }
+        }
+        .wp-block-image {
+            margin: 0;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+            background-image: linear-gradient(transparent 18px, rgba(0, 0, 0, 0.2) 0);
+            @media #{$des} {
+                &:hover {
+                    background-image: linear-gradient(transparent 18px, $accent 0);
+                }
+            }
+        }
+        @media #{$tab} {
+            grid-template-columns: 0.25fr 1fr;
+            align-items: start;
+        }
+        @media #{$des} {
+            grid-template-columns: 0.5fr 1fr;
+        }
+        @media #{$des2} {
+            grid-template-columns: 0.25fr 1fr;
+        }
+    }
+}

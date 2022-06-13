@@ -1,0 +1,52 @@
+@use '../abstracts/' as *;
+//
+.log-in,
+.register,
+.profile,
+.account,
+.password-reset,
+.password-reset-2,
+.register {
+    .main-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .site-main {
+        padding: 1rem;
+        max-width: 40rem;
+    }
+}
+
+.wpum-already-logged-in {
+    margin: 2rem 0;
+}
+
+.wpum-form {
+    fieldset {
+        padding: 0 0 1rem 0;
+    }
+    .button {
+        border-radius: 0.25rem;
+        border: 2px solid $medgray;
+        background-color: transparent;
+        @media #{$des} {
+            &:hover {
+                color: $accent;
+                border-color: $accent;
+            }
+        }
+    }
+}
+
+.wpum-action-links {
+    padding: 1rem 0;
+    a {
+        color: $accent;
+        font-weight: 700;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -44,7 +44,7 @@ function childhead() {
     echo '<link rel="dns-prefetch" href="//cdn.ampproject.org/v0.js" as="script">';
     echo '<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>';
 
-    if(is_page('profile') || is_page('account') || is_page('log-in') || is_page('password-reset')){
+    if(is_page('profile') || is_page('account') || is_page('log-in') || is_page('password-reset') || is_page('register')){
         echo '<link rel="preload" href="https://www.getzone.com/wp-content/plugins/wp-user-manager/assets/css/wpum.min.css" as="style"  onload="this.rel=\'stylesheet\'" >';
     }
 
